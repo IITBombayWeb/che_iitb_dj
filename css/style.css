@@ -1,0 +1,85 @@
+/**
+ * If using a CSS pre-processor, tell it to overwrite this file. If not, place
+ * your custom CSS modifications here.
+ */
+
+
+.node .slide__caption .slide__title{
+	font-size: 1rem;
+	text-align: center;
+}
+
+.slide__caption{
+	background: #000000;
+  opacity: 0.5;
+  padding: 5px!important;
+  color: #ffffff;
+}
+
+.slide__title{
+	margin: 5px 0 5px;
+}
+.slide__title a, .slide__title a:hover{
+	color: #ffffff;
+}
+
+.btn-trans a{
+  display: inline-block;
+  padding: 7px 20px;
+  text-transform: uppercase;
+  font-size: 12px;
+  transition: .3s ease 0s
+ }
+
+ .btn-trans a:hover{
+ 	text-decoration: none;
+ }
+
+@media (min-width: 767px){
+
+	ul.sf-menu a, ul.sf-menu span.nolink{
+		padding: 1em;
+	}
+	.region-navigation-collapsible ul.sf-menu li:hover a::before {
+  	right: 0;
+  	left: 0;
+	}
+	.region-navigation-collapsible a {
+	  text-decoration: none;
+	  text-align: center;
+	  display: block;
+	  position: relative;
+	  transition: all 0.3s ease;
+	}
+/*	.region-navigation-collapsible a:hover {
+	  color: #e74c3c;
+	}*/
+	.region-navigation-collapsible a::before {
+	  content: "";
+	  transition: all 0.4s ease-in-out;
+	  position: absolute;
+	  right: 50%;
+	  left: 50%;
+	  bottom: 0;
+	  height: 2px;
+	  background-color: #163d23;
+	}
+
+	.region-navigation-collapsible ul.sf-menu li ul li a{
+		 text-decoration: none;
+	  text-align: center;
+	  display: block;
+	  position: relative;
+	  transition: none;
+	}
+	.region-navigation-collapsible ul.sf-menu li ul li a::before{
+		content: "";
+	  transition: none;
+	  position: absolute;
+	  right: 50%;
+	  left: 50%;
+	  bottom: 0;
+	  height: 2px;
+	  background-color: #163d23;
+	}
+}
