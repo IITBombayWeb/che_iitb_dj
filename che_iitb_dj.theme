@@ -27,6 +27,6 @@ function che_iitb_dj_theme_suggestions_block_alter(&$suggestions, $variables) {
 
   // Load theme suggestions for blocks from parent theme.
   foreach ($suggestions as &$suggestion) {
-    $suggestion = str_replace('che_che_iitb_dj_', 'acadmix_', $suggestion);
+    $suggestion = str_replace('che_iitb_dj_', 'iitb_dj_', $suggestion);
   }
 }
