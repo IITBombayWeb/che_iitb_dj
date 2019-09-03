@@ -35,7 +35,7 @@
 }
 
 .section-footer *, .section-footer a:hover{
-  color: #ffffff;
+  color: #ffffff!important;
 }
 /*End_footer_section*/
 
@@ -67,14 +67,15 @@ a:focus{
   color: #337ab7;
 }
 
-a:hover, .news-card .lst_news_item a:hover{
+a:hover, .news-card .lst_news_item a:hover {
    color: #337ab7;
 }
-
+.news-card .lst_news_list .views-field-nothing a {
+  color: #337ab7;
+}
 a.views-more-link {
   color: #337ab7!important;
 }
-
 .language-switcher-language-url ul.lang-links li a{
   color: #337ab7;
 }
@@ -106,7 +107,9 @@ h2.page-header {
   border-color: #337ab7;
 }
 
-
+li.node-readmore {
+  background-color: #337ab7;
+}
 
 
 .menu-base-theme li a:hover,

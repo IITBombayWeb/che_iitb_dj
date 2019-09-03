@@ -3,26 +3,47 @@
  * your custom CSS modifications here.
  */
 
-
+#slick-views-main-slider-block-1-1-slider .slide__caption {
+  position: absolute;
+  top: 15%;
+  width: 80%;
+  text-align: left;
+  font-size: 80%;
+  color: #ffffff;
+  left : 5%;
+  padding: 15px!important;
+  background: rgba(0,0,0,0.5);
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px; 
+  border-top-left-radius: unset;
+  border-top-right-radius: unset;
+  margin: unset;
+  bottom: unset;
+  transform: none;
+}
+#slick-views-main-slider-block-1-1-slider .slide__title {
+	font-size: 1rem;
+}
+#slick-views-main-slider-block-1-1-slider img.media__image {
+	width: 100%
+}
 .node .slide__caption .slide__title{
 	font-size: 1rem;
 	text-align: center;
 }
-
 .slide__caption{
-	background: #000000;
-  opacity: 0.5;
+/*	background: #000000;
+  opacity: 0.5;*/
   padding: 5px!important;
   color: #ffffff;
 }
-
 .slide__title{
 	margin: 5px 0 5px;
 }
 .slide__title a, .slide__title a:hover{
 	color: #ffffff;
 }
-
 .btn-trans a{
   display: inline-block;
   padding: 7px 20px;
@@ -30,12 +51,66 @@
   font-size: 12px;
   transition: .3s ease 0s
  }
+.btn-trans a:hover{
+	text-decoration: none;
+}
+li.node-readmore {
+	border-radius: 4px;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  padding: 5px 15px;
+  /*width: 200px;*/
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+li.node-readmore:hover {
+	opacity: 0.8;
+}
 
- .btn-trans a:hover{
- 	text-decoration: none;
- }
+li.node-readmore a {
+	color: #ffffff;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  padding-right: 20px;
+}
 
-@media (min-width: 767px){
+li.node-readmore a:hover {
+	color: #ffffff!important;
+	text-decoration: none;
+}
+
+li.node-readmore a:after {
+  content: '\00bb';
+  position: absolute;
+  top: 0;
+  right: 5px;
+  /*right: 0;*/
+  transition: 0.5s;
+   -webkit-animation: mymove 1s infinite; /* Safari 4.0 - 8.0 */
+  animation: mymove 1s infinite;
+}
+
+li.node-readmore:hover a:after {
+  right: -4px;
+  -webkit-animation: none; /* Safari 4.0 - 8.0 */
+  animation: none;
+}
+
+@keyframes mymove {
+    0%   {right: 0;transition: 0.5s;}
+    100% {right: -4px;transition: 0.5s;}
+}
+
+@media screen and (min-width: 600px) {
+	#slick-views-main-slider-block-1-1-slider .slide__title {
+		font-size: 1.5rem;
+	}
+}
+
+@media screen and (min-width: 767px){
 
 	ul.sf-menu a, ul.sf-menu span.nolink{
 		padding: 1em;
@@ -65,14 +140,14 @@
 	  background-color: #163d23;
 	}
 
-	.region-navigation-collapsible ul.sf-menu li ul li a{
+	.region-navigation-collapsible ul.sf-menu li ul li a {
 		 text-decoration: none;
 	  text-align: center;
 	  display: block;
 	  position: relative;
 	  transition: none;
 	}
-	.region-navigation-collapsible ul.sf-menu li ul li a::before{
+	.region-navigation-collapsible ul.sf-menu li ul li a::before {
 		content: "";
 	  transition: none;
 	  position: absolute;
@@ -82,4 +157,15 @@
 	  height: 2px;
 	  background-color: #163d23;
 	}
+	#slick-views-main-slider-block-1-1-slider .slide__title {
+		font-size: 2rem;
+	}
+	#slick-views-main-slider-block-1-1-slider .slide__caption {
+		font-size: 100%;
+		top: 30%;
+		left: 5%;
+		line-height: 150%;
+		padding: 20px!important;
+	}
 }
+
