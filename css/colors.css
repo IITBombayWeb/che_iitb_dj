@@ -230,3 +230,21 @@ color: #337ab7!important;
   background-color: #337ab7;
 }
 /*button*/
+
+
+/*research group member filters start*/
+#filters li span {
+  border: 1px solid #444444;
+  color: #444444;
+}
+#filters li span.active, #filters li span:hover {
+  background: #444444;
+}
+
+.portfolio .label-text a, .portfolio .label-text a:hover{
+  background: #444444;
+}
+.portfolio .read-more a {
+  background : #444444;
+}
+/*research group member filters end*/

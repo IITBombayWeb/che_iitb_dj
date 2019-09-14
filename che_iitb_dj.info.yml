@@ -36,4 +36,27 @@ regions:
   page_bottom: 'Page bottom'
 
 libraries:
-  - 'che_iitb_dj/global-styling'
+  - che_iitb_dj/global-styling
+  - che_iitb_dj/js-mixitup
+
+libraries-override:
+  # Replace an entire library.
+  # core/drupal.collapse: mytheme/collapse
+  
+  # Replace an asset with another.
+  # subtheme/library:
+  #   css:
+  #     theme:
+  #       css/layout.css: css/my-layout.css
+  
+  # Remove an asset.
+
+  # iitb_dj/iitb_dj-lib:
+  #   css:
+  #     theme:
+  #       includes/others/bootstrap-dropdownhover.min.css: false
+  #   js:
+  #     includes/others/bootstrap-dropdownhover.min.js: false
+  
+  # Remove an entire library.
+  iitb_dj/bootstrap: che_iitb_dj/bootstrap
