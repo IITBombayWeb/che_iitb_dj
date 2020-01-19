@@ -248,3 +248,25 @@ color: #337ab7!important;
   background : #444444;
 }
 /*research group member filters end*/
+
+
+/*research group menu start*/
+div.sf-accordion-toggle.sf-style-none a {
+  background: #444444;
+  border: 1px solid #444444;
+}
+
+@media only screen and (max-width: 767px) {
+
+  ul.sf-menu.sf-style-none li, ul.sf-menu.sf-style-none.sf-navbar {
+        background: #444444;
+  }
+  ul.sf-menu.sf-style-none li li, ul.sf-menu.sf-style-none.sf-navbar > li > ul {
+    background: #444444;
+  }
+  div.sf-accordion-toggle.sf-style-none a.sf-expanded, ul.sf-menu.sf-style-none.sf-accordion li.sf-expanded {
+    background:  #444444;
+    opacity: 0.9;
+  }
+}
+/*research group menu end*/
