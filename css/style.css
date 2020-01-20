@@ -109,7 +109,12 @@ li.node-readmore:hover a:after {
 
 
 /*=================group news block start====================*/
-.view-group-news .btn-trans a {
+.view-group-news .more-link a {
+	padding: 4px 6px;
+	text-transform: none;
+}
+
+.view-group-research-areas .more-link a {
 	padding: 4px 6px;
 	text-transform: none;
 }
@@ -123,7 +128,27 @@ ul.sf-menu.sf-style-none li li, ul.sf-menu.sf-style-none.sf-navbar > li > ul {
 ul.sf-menu a:hover {
 	text-decoration: none;
 }
-/*group menu start*/
+
+div.sf-accordion-toggle.sf-style-none a {
+  color: #fff;
+  display: inline-block;
+  font-weight: bold;
+  padding: 1em 3em 1em 1em;
+  position: relative;
+}
+div.sf-accordion-toggle.sf-style-none > a:after {
+	content: "≡";
+    font-size: 2em;
+    position: absolute;
+    right: 0.5em;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    speak: none;
+}
+/*group menu end*/
 
 /*group home page start*/
 .page-header a:hover {
@@ -142,7 +167,7 @@ ul.sf-menu a:hover {
 
 @media screen and (min-width: 767px){
 	ul.sf-menu a, ul.sf-menu span.nolink{
-		padding: 1em;
+		padding: 12px 15px;
 	}
 	ul.sf-menu li a::before {
 		content: "";
@@ -161,56 +186,20 @@ ul.sf-menu a:hover {
 		display: block;
 		position: relative;
 		transition: all 0.3s ease;
+		font-weight: bold;
 	}
 	ul.sf-menu li:hover a::before {
 		right: 0;
 	  left: 0;
 	}
-ul.sf-menu li.menuparent ul li a::before {
-	right: 0;
-	left: 0;
-}
-/*
-
-	.region-navigation-collapsible ul.sf-menu li:hover a::before {
-  	right: 0;
-  	left: 0;
+	ul.sf-menu li.menuparent ul li a::before {
+		right: 0;
+		left: 0;
 	}
-	.region-navigation-collapsible a {
-	  text-decoration: none;
-	  text-align: center;
-	  display: block;
-	  position: relative;
-	  transition: all 0.3s ease;
+	ul.sf-menu .sf-sub-indicator {
+		height: 14px;
+    right: 2em;
 	}
-	.region-navigation-collapsible a::before {
-	  content: "";
-	  transition: all 0.4s ease-in-out;
-	  position: absolute;
-	  right: 50%;
-	  left: 50%;
-	  bottom: 0;
-	  height: 2px;
-	  background-color: #163d23;
-	}
-
-	.region-navigation-collapsible ul.sf-menu li ul li a {
-		 text-decoration: none;
-	  text-align: center;
-	  display: block;
-	  position: relative;
-	  transition: none;
-	}
-	.region-navigation-collapsible ul.sf-menu li ul li a::before {
-		content: "";
-	  transition: none;
-	  position: absolute;
-	  right: 50%;
-	  left: 50%;
-	  bottom: 0;
-	  height: 2px;
-	  background-color: #163d23;
-	}*/
 
 	#slick-views-main-slider-block-1-1-slider .slide__title {
 		font-size: 2rem;
@@ -221,6 +210,14 @@ ul.sf-menu li.menuparent ul li a::before {
 		left: 5%;
 		line-height: 150%;
 		padding: 20px!important;
+	}
+}
+@media only screen and (max-width: 767px) {
+
+	ul.sf-menu.sf-style-none a, ul.sf-menu.sf-style-none a:visited, ul.sf-menu.sf-style-none span.nolink {
+	    border: 0 none;
+	    color: #ffffff;
+	    padding: 0.75em 1em;
 	}
 }
 
