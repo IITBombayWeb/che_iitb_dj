@@ -2,8 +2,18 @@
  * If using a CSS pre-processor, tell it to overwrite this file. If not, place
  * your custom CSS modifications here.
  */
+hr {
+  background-color: #047e65;
+  border-width: 0;
+  height: 2px;
+  width: 80%;
+}
 .inline-block {
   display: inline-block;
+}
+#slick-views-main-slider-group-block-1-1-slider .slide__caption {
+  background: rgba(0,0,0,0.5);
+  width: 80%;
 }
 #slick-views-main-slider-block-1-1-slider .slide__caption {
   position: absolute;
