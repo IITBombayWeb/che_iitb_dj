@@ -270,3 +270,24 @@ div.sf-accordion-toggle.sf-style-none a {
   }
 }
 /*research group menu end*/
+
+/* PPHD TA topics grouping faculty styles start*/
+.phd-ta-topics-block table caption,
+.mtech-project-topics-block table caption,
+.undergraduate-projects-block table caption {
+  text-align: center;
+  background-color: #444444;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.phd-ta-topics-block table caption a,
+.phd-ta-topics-block table caption a:hover,
+.mtech-project-topics-block table caption a,
+.mtech-project-topics-block table caption a:hover,
+.undergraduate-projects-block table caption a,
+.undergraduate-projects-block table caption a:hover {
+  color: #ffffff;
+  font-weight: normal;
+}
+/* PPHD TA topics grouping faculty styles end*/
